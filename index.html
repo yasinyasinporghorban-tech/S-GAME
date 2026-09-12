@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sana Quest 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="gameContainer">
+
+        <canvas id="game"></canvas>
+
+        <div id="hud">
+
+            <div class="hudBox">
+                ❤️ <span id="health">100</span>
+            </div>
+
+            <div class="hudBox">
+                💗 <span id="hearts">0</span>/5
+            </div>
+
+            <div class="hudBox">
+                👹 <span id="enemyCount">0</span>
+            </div>
+
+        </div>
+
+        <div id="message"></div>
+
+        <div id="dialogue" class="hidden">
+
+            <div id="dialogueName">
+                ?
+            </div>
+
+            <div id="dialogueText">
+                ...
+            </div>
+
+            <button id="dialogueNext">
+                ادامه
+            </button>
+
+        </div>
+
+        <div id="quest" class="hidden">
+
+            <h2>📜 مأموریت</h2>
+
+            <p id="questText"></p>
+
+        </div>
+
+
+        <div id="startScreen">
+
+            <div class="startBox">
+
+                <h1>SANA QUEST</h1>
+
+                <p>
+                    یک ماجراجویی کوچک برای یک نفر خاص 💗
+                </p>
+
+                <button id="startButton">
+                    شروع بازی 🎮
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div id="gameOver" class="hidden">
+
+            <h1>Game Over 💔</h1>
+
+            <button onclick="location.reload()">
+                دوباره بازی کن
+            </button>
+
+        </div>
+
+
+        <div id="ending" class="hidden">
+
+            <h1>🎉 مأموریت کامل شد 🎉</h1>
+
+            <p>
+                یاسین بالاخره به مقصدش رسید...
+            </p>
+
+            <button id="proposalButton">
+                مرحله آخر 🥺
+            </button>
+
+        </div>
+
+
+        <div id="proposal" class="hidden">
+
+            <h1>🥺❤️</h1>
+
+            <h2>
+                ثنا...
+            </h2>
+
+            <p>
+                یه سؤال آخر دارم.
+            </p>
+
+            <h2>
+                دوست داری با یاسین وارد رابطه بشی؟
+            </h2>
+
+            <button class="yesButton" onclick="yesAnswer()">
+                آره ❤️
+            </button>
+
+            <button class="noButton" onclick="noAnswer()">
+                نه 🤍
+            </button>
+
+        </div>
+
+
+        <div id="yesEnding" class="hidden">
+
+            <h1>😭❤️🎉</h1>
+
+            <h2>
+                MISSION COMPLETE!
+            </h2>
+
+            <p>
+                بهترین پایان ممکن برای این داستان.
+            </p>
+
+            <p>
+                — Yasin
+            </p>
+
+        </div>
+
+
+        <div id="noEnding" class="hidden">
+
+            <h1>🤍</h1>
+
+            <h2>
+                ممنون که صادق بودی.
+            </h2>
+
+            <p>
+                مهم اینه که انتخاب خودت رو کردی.
+            </p>
+
+            <p>
+                — Yasin
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
